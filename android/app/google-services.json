@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "41423486419",
+    "project_id": "sellingparadise-fb650",
+    "storage_bucket": "sellingparadise-fb650.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41423486419:android:2724673951ee90dbaa8326",
+        "android_client_info": {
+          "package_name": "com.flutterflow.SellingParadise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdBWldopsSYCGfiX9zVqBsvepWg_Yoqf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41423486419:android:ee8186a27ef4a9f2aa8326",
+        "android_client_info": {
+          "package_name": "com.flutterflow.homeU"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdBWldopsSYCGfiX9zVqBsvepWg_Yoqf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
