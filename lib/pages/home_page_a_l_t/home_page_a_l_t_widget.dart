@@ -1,17 +1,15 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'home_page_a_l_t_model.dart';
 export 'home_page_a_l_t_model.dart';
 
 class HomePageALTWidget extends StatefulWidget {
-  const HomePageALTWidget({Key? key}) : super(key: key);
+  const HomePageALTWidget({super.key});
 
   @override
   _HomePageALTWidgetState createState() => _HomePageALTWidgetState();
@@ -83,7 +81,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                 Container(
                   width: double.infinity,
                   height: 370.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [Color(0xFF1E2429), Color(0x001E2429)],
                       stops: [0.0, 1.0],
@@ -96,7 +94,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 100.0, 0.0, 0.0),
                         child: Image.asset(
                           'assets/images/logo_selling.png',
@@ -107,12 +105,12 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 8.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -133,7 +131,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -166,7 +164,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
               builder: (context, snapshot) {
                 // Customize what your widget looks like when it's loading.
                 if (!snapshot.hasData) {
-                  return Center(
+                  return const Center(
                     child: SizedBox(
                       width: 50.0,
                       height: 50.0,
@@ -190,7 +188,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                         listViewPropertiesRecordList[listViewIndex];
                     return Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 15.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -217,7 +215,7 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                             color: FlutterFlowTheme.of(context).cultured,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: const AlignmentDirectional(0.00, 0.00),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -231,9 +229,9 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 0.00),
+                                  alignment: const AlignmentDirectional(-1.00, 0.00),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 10.0, 0.0, 10.0),
                                     child: Text(
                                       listViewPropertiesRecord.propertyName,

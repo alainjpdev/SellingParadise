@@ -3,21 +3,18 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'property_details_model.dart';
 export 'property_details_model.dart';
 
 class PropertyDetailsWidget extends StatefulWidget {
   const PropertyDetailsWidget({
-    Key? key,
+    super.key,
     required this.idProperty,
-  }) : super(key: key);
+  });
 
   final PropertiesRecord? idProperty;
 
@@ -46,8 +43,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 50.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 50.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -65,8 +62,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 80.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 80.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -120,7 +117,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -129,13 +126,13 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                           width: MediaQuery.sizeOf(context).width * 0.9,
                           height: 320.0,
                           decoration: BoxDecoration(
-                            color: Color(0xFFDBE2E7),
+                            color: const Color(0xFFDBE2E7),
                             borderRadius: BorderRadius.circular(16.0),
                           ),
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: const AlignmentDirectional(0.00, 0.00),
                                 child: Hero(
                                   tag: widget.idProperty!.mainImage,
                                   transitionOnUserGestures: true,
@@ -151,7 +148,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -172,7 +169,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           child: Card(
                                             clipBehavior:
                                                 Clip.antiAliasWithSaveLayer,
-                                            color: Color(0x3A000000),
+                                            color: const Color(0x3A000000),
                                             shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
@@ -181,7 +178,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                               borderColor: Colors.transparent,
                                               borderRadius: 30.0,
                                               buttonSize: 46.0,
-                                              icon: Icon(
+                                              icon: const Icon(
                                                 Icons.arrow_back_rounded,
                                                 color: Colors.white,
                                                 size: 24.0,
@@ -205,7 +202,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -224,7 +221,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [

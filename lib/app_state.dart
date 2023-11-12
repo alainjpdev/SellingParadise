@@ -41,30 +41,30 @@ class FFAppState extends ChangeNotifier {
 
   String _cardNumber = '';
   String get cardNumber => _cardNumber;
-  set cardNumber(String _value) {
-    _cardNumber = _value;
-    prefs.setString('ff_cardNumber', _value);
+  set cardNumber(String value) {
+    _cardNumber = value;
+    prefs.setString('ff_cardNumber', value);
   }
 
   String _cardHolderName = '';
   String get cardHolderName => _cardHolderName;
-  set cardHolderName(String _value) {
-    _cardHolderName = _value;
-    prefs.setString('ff_cardHolderName', _value);
+  set cardHolderName(String value) {
+    _cardHolderName = value;
+    prefs.setString('ff_cardHolderName', value);
   }
 
   String _cardName = '';
   String get cardName => _cardName;
-  set cardName(String _value) {
-    _cardName = _value;
-    prefs.setString('ff_cardName', _value);
+  set cardName(String value) {
+    _cardName = value;
+    prefs.setString('ff_cardName', value);
   }
 
   String _zipCode = '';
   String get zipCode => _zipCode;
-  set zipCode(String _value) {
-    _zipCode = _value;
-    prefs.setString('ff_zipCode', _value);
+  set zipCode(String value) {
+    _zipCode = value;
+    prefs.setString('ff_zipCode', value);
   }
 }
 

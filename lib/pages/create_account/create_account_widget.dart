@@ -4,13 +4,12 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'create_account_model.dart';
 export 'create_account_model.dart';
 
 class CreateAccountWidget extends StatefulWidget {
-  const CreateAccountWidget({Key? key}) : super(key: key);
+  const CreateAccountWidget({super.key});
 
   @override
   _CreateAccountWidgetState createState() => _CreateAccountWidgetState();
@@ -60,7 +59,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFF4B39EF),
+      backgroundColor: const Color(0xFF4B39EF),
       body: Container(
         width: MediaQuery.sizeOf(context).width * 1.0,
         height: MediaQuery.sizeOf(context).height * 1.0,
@@ -81,14 +80,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
               height: 475.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).turquoise,
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     blurRadius: 7.0,
                     color: Color(0x4D090F13),
                     offset: Offset(0.0, 3.0),
                   )
                 ],
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(16.0),
                   bottomRight: Radius.circular(16.0),
                   topLeft: Radius.circular(0.0),
@@ -96,7 +95,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -105,7 +104,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 56.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -129,7 +128,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 4.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 4.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -143,7 +142,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -169,21 +168,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
@@ -193,7 +192,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 24.0, 0.0, 24.0),
                                 ),
                                 style: FlutterFlowTheme.of(context).bodySmall,
@@ -207,7 +206,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -233,21 +232,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
@@ -257,7 +256,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 24.0, 24.0, 24.0),
                                   suffixIcon: InkWell(
                                     onTap: () => setState(
@@ -269,7 +268,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       _model.passwordVisibility
                                           ? Icons.visibility_outlined
                                           : Icons.visibility_off_outlined,
-                                      color: Color(0xFF95A1AC),
+                                      color: const Color(0xFF95A1AC),
                                       size: 22.0,
                                     ),
                                   ),
@@ -284,7 +283,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -310,21 +309,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   errorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedErrorBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 2.0,
                                     ),
@@ -334,7 +333,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 24.0, 24.0, 24.0),
                                   suffixIcon: InkWell(
                                     onTap: () => setState(
@@ -346,7 +345,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       _model.password2Visibility
                                           ? Icons.visibility_outlined
                                           : Icons.visibility_off_outlined,
-                                      color: Color(0xFF95A1AC),
+                                      color: const Color(0xFF95A1AC),
                                       size: 22.0,
                                     ),
                                   ),
@@ -363,7 +362,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -388,14 +387,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                         ],
                       ),
                       Align(
-                        alignment: AlignmentDirectional(1.00, 0.00),
+                        alignment: const AlignmentDirectional(1.00, 0.00),
                         child: FFButtonWidget(
                           onPressed: () async {
                             GoRouter.of(context).prepareAuthEvent();
                             if (_model.passwordController.text !=
                                 _model.password2Controller.text) {
                               ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
+                                const SnackBar(
                                   content: Text(
                                     'Passwords don\'t match!',
                                   ),
@@ -420,9 +419,9 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           text: 'Sign Up',
                           options: FFButtonOptions(
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -432,7 +431,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                   color: Colors.white,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
