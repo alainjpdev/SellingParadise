@@ -381,9 +381,21 @@ class _LoginWidgetState extends State<LoginWidget> {
                             ),
                             FFButtonWidget(
                               onPressed: () async {
-                                context.pushNamed('login');
+                                GoRouter.of(context).prepareAuthEvent();
+
+                                final user = await authManager.signInWithEmail(
+                                  context,
+                                  _model.emailAddressController.text,
+                                  _model.passwordController.text,
+                                );
+                                if (user == null) {
+                                  return;
+                                }
+
+                                context.pushNamedAuth(
+                                    'HomePage_ALT', context.mounted);
                               },
-                              text: 'LOGIN',
+                              text: 'Login',
                               options: FFButtonOptions(
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(

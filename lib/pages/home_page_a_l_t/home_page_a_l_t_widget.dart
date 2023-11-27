@@ -1,6 +1,8 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -89,64 +91,80 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                       end: AlignmentDirectional(0, -1.0),
                     ),
                   ),
-                  child: Column(
+                  child: Row(
                     mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            0.0, 100.0, 0.0, 0.0),
-                        child: Image.asset(
-                          'assets/images/logo_selling.png',
-                          width: 230.0,
-                          height: 90.0,
-                          fit: BoxFit.fitWidth,
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                      Expanded(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 0.0, 24.0, 8.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    'Welcome!',
-                                    style: FlutterFlowTheme.of(context)
-                                        .displaySmall
-                                        .override(
-                                          fontFamily: 'Urbanist',
-                                          color: FlutterFlowTheme.of(context)
-                                              .tertiary,
-                                          fontSize: 36.0,
-                                        ),
+                            Expanded(
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.00, 0.00),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 10.0, 0.0, 0.0),
+                                  child: Image.asset(
+                                    'assets/images/logo_selling.png',
+                                    width: 151.0,
+                                    height: 90.0,
+                                    fit: BoxFit.fitWidth,
                                   ),
-                                ],
+                                ),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 0.0, 24.0, 0.0),
-                              child: Row(
+                                  0.0, 0.0, 0.0, 24.0),
+                              child: Column(
                                 mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    'Find your Dream Space',
-                                    style: FlutterFlowTheme.of(context)
-                                        .headlineMedium
-                                        .override(
-                                          fontFamily: 'Urbanist',
-                                          color: FlutterFlowTheme.of(context)
-                                              .tertiary,
-                                          fontWeight: FontWeight.w100,
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 0.0, 24.0, 8.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          'Welcome!',
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Urbanist',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .tertiary,
+                                                fontSize: 36.0,
+                                              ),
                                         ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 0.0, 24.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          currentUserEmail,
+                                          style: FlutterFlowTheme.of(context)
+                                              .headlineMedium
+                                              .override(
+                                                fontFamily: 'Urbanist',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .tertiary,
+                                                fontWeight: FontWeight.w100,
+                                              ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ],
                               ),
@@ -155,6 +173,69 @@ class _HomePageALTWidgetState extends State<HomePageALTWidget> {
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Align(
+                  alignment: const AlignmentDirectional(1.00, -1.00),
+                  child: Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 10.0, 0.0),
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        context.pushNamed('deleteAccount');
+                      },
+                      text: 'Delete Account',
+                      options: FFButtonOptions(
+                        height: 40.0,
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            24.0, 0.0, 24.0, 0.0),
+                        iconPadding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: FlutterFlowTheme.of(context).primary,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Urbanist',
+                                  color: Colors.white,
+                                ),
+                        elevation: 3.0,
+                        borderSide: const BorderSide(
+                          width: 1.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 50.0, 0.0, 0.0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      GoRouter.of(context).prepareAuthEvent();
+                      await authManager.signOut();
+                      GoRouter.of(context).clearRedirectLocation();
+
+                      context.pushNamedAuth('login', context.mounted);
+                    },
+                    text: 'Log out',
+                    options: FFButtonOptions(
+                      height: 40.0,
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      color: FlutterFlowTheme.of(context).primary,
+                      textStyle:
+                          FlutterFlowTheme.of(context).titleSmall.override(
+                                fontFamily: 'Urbanist',
+                                color: Colors.white,
+                              ),
+                      elevation: 3.0,
+                      borderSide: const BorderSide(
+                        color: Colors.transparent,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
                   ),
                 ),
               ],

@@ -72,13 +72,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HomePageALTWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? const HomePageALTWidget() : const HomePageALTWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const HomePageALTWidget() : const LoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? const HomePageALTWidget()
+              : const HomePageALTWidget(),
         ),
         FFRoute(
           name: 'login',
@@ -105,6 +106,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'HomePage_ALT',
           path: '/homePage_ALT',
           builder: (context, params) => const HomePageALTWidget(),
+        ),
+        FFRoute(
+          name: 'deleteAccount',
+          path: '/deleteAccount',
+          requireAuth: true,
+          builder: (context, params) => const DeleteAccountWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -271,7 +278,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/login';
+            return '/homePage_ALT';
           }
           return null;
         },

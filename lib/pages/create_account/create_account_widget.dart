@@ -117,11 +117,20 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 fit: BoxFit.fitWidth,
                               ),
                             if (Theme.of(context).brightness == Brightness.dark)
-                              Image.asset(
-                                'assets/images/logo_selling.png',
-                                width: 200.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
+                              Expanded(
+                                child: Align(
+                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  child: Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 40.0, 0.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/logo_selling.png',
+                                      width: 163.0,
+                                      height: 74.0,
+                                      fit: BoxFit.fitWidth,
+                                    ),
+                                  ),
+                                ),
                               ),
                           ],
                         ),
@@ -413,7 +422,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                               return;
                             }
 
-                            context.goNamedAuth(
+                            context.pushNamedAuth(
                                 'HomePage_ALT', context.mounted);
                           },
                           text: 'Sign Up',

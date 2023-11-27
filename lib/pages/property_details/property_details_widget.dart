@@ -225,19 +225,26 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text(
-                          valueOrDefault<String>(
-                            widget.idProperty?.propertyDescription,
-                            'propertyDescription',
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .bodySmall
-                              .override(
-                                fontFamily: 'Lexend Deca',
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.bold,
+                        Expanded(
+                          child: Align(
+                            alignment: const AlignmentDirectional(0.00, 0.00),
+                            child: Text(
+                              valueOrDefault<String>(
+                                widget.idProperty?.propertyDescription,
+                                'propertyDescription',
                               ),
+                              textAlign: TextAlign.justify,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodySmall
+                                  .override(
+                                    fontFamily: 'Lexend Deca',
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                            ),
+                          ),
                         ),
                       ],
                     ).animateOnPageLoad(
